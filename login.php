@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +28,10 @@
          <form method="post" action="">
             <img src="img/avatar.svg">
             <h2 class="title">BIENVENIDO</h2>
+            <?php
+            include "modelo/conexion.php";
+            include "Controlador/controlador_login.php";
+            ?>
             <div class="input-div one">
                <div class="i">
                   <i class="fas fa-user"></i>
